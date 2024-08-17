@@ -16,7 +16,11 @@ body {
 
 .login-container {
     display: flex;
+<<<<<<< HEAD
     background-color: var(--ctp-mocha-base); 
+=======
+    background-color: rgba(24, 16, 11, 0.7); 
+>>>>>>> refs/remotes/origin/main
     backdrop-filter: blur(10px);
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(233, 232, 232, 0.3);
@@ -87,5 +91,49 @@ body {
     cursor: pointer;
     font-size: 19px;
 }
+body.light-mode {
+    background: url('https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif') no-repeat center center/cover;
+    color: #000;
+}
 
+body.light-mode .login-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+}
+
+body.light-mode .input-group input {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-mode .google-login {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-mode .login-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+.toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.mode-toggle {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+body.light-mode .mode-toggle {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #000;
+}
 
