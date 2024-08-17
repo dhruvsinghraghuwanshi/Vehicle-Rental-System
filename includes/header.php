@@ -1,11 +1,7 @@
-
 <header>
   <div class="default-header">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 col-md-2">
-          <div class="logo"> <a href="index.php"><img src="assets/images/logo.png" alt="image"/></a> </div>
-        </div>
         <div class="col-sm-9 col-md-10">
           <div class="header_info">
          <?php
@@ -18,25 +14,13 @@ $email=$result->EmailId;
 $contactno=$result->ContactNo;
 }
 ?>   
-
-            <!-- <div class="header_widgets">
-              <div class="circle_icon"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
-              <p class="uppercase_text">For Support Mail us : </p>
-              <a href="mailto:<?php echo htmlentities($email);?>"><?php echo htmlentities($email);?></a> </div>
-            <div class="header_widgets">
-              <div class="circle_icon"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
-              <p class="uppercase_text">Service Helpline Call Us: </p>
-              <a href="tel:<?php echo htmlentities($contactno);?>"><?php echo htmlentities($contactno);?></a> </div>
-            <div class="social-follow"> -->
-            
-            </div>
+</div>
    <?php   if(strlen($_SESSION['login'])==0)
 	{	
 ?>
  <div class="login_btn"> <a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Login / Register</a> </div>
 <?php }
 else{ 
-
 // echo "Welcome To Car rental portal";
  } ?>
           </div>
@@ -44,8 +28,6 @@ else{
       </div>
     </div>
   </div>
-  
-  <!-- Navigation -->
   <nav id="navigation_bar" class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
@@ -92,17 +74,13 @@ foreach($results as $result)
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
-          <li><a href="index.php">Home</a>    </li>
-          	 
-          <li><a href="page.php?type=aboutus">About Us</a></li>
+          <li><a class="main-logo" href="index.php"><img  src="assets/images/logo.png" alt="image"/></a></li>
           <li><a href="car-listing.php">Car Listing</a>
           <li><a href="page.php?type=faqs">FAQs</a></li>
           <li><a href="contact-us.php">Contact Us</a></li>
-
         </ul>
       </div>
     </div>
   </nav>
   <!-- Navigation end --> 
-  
 </header>
