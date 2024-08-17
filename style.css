@@ -1,0 +1,199 @@
+/* if you have it installed via NPM & a CSS loader configured */
+
+/* alternatively via unpkg.com */
+@property --bg-angle {
+    inherits: false;
+    initial-value: 0deg;
+    syntax: "<angle>";
+}
+@keyframes spin {
+    to {
+        --bg-angle: 360deg;
+    }
+}
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('login-bg.jpeg') no-repeat center center/cover;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    color:#ebdbb2;
+    font-weight: 500;
+    
+}
+
+.login-container {
+    display: flex;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    max-width: 500px; 
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(29, 32, 33, 0.9);
+    border-radius: 0.9rem;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.input-group input {
+    width: 96%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: #3c3836;
+    color: #fbf1c7;
+    font-size: 14px;
+}
+
+.google-login {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #3c3836;
+    border: none;
+    border-radius: 12px;
+    color: #fbf1c7;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-login::before {
+    margin-right: 10px;
+}
+
+.fa-google{
+    color: #b8bb26;
+    margin-bottom: 3px;
+}
+
+.fa-question{
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #3c3836;
+    border: none;
+    border-radius: 12px;
+    color: #fbf1c7;
+    cursor: pointer;
+    font-size: 19px;
+}
+/* body.light-mode {
+    background: url('WhatsApp\ Image\ 2024-08-17\ at\ 12.33.15.jpeg') no-repeat center center/cover;
+    color: #3c3828;
+    font-weight: 500;
+}
+
+body.light-mode .login-container {
+    background-color: rgba(251, 241, 199, 0.9);
+    color: #282828;
+}
+
+body.light-mode .input-group input {
+    background-color: rgb(189, 174, 147);
+    color: #282828;
+}
+
+body.light-mode .google-login {
+    background-color: rgb(189, 174, 147);
+    color: #282828;
+}
+
+body.light-mode .login-btn {
+    background-color: rgb(189, 174, 147);
+    color: #282828;
+}
+
+body.light-mode .sign-up-button{
+    background-color: rgb(189, 174, 147);
+    color: #282828;
+}
+
+body.light-mode .fa-google{
+    color: #cc241d;
+}
+
+.toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.mode-toggle {
+    background-color: var(--ctp-frappe-base);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+body.light-mode .mode-toggle {
+    background-color: var(--ctp-frappe-base);
+    color: #000;
+} */
+
+.sign-up{
+    margin-top: 50px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+.sign-up-button{
+        width: 40%;
+        background-color: #3c3836;
+        margin-top: 14px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border: none;
+        border-radius: 12px;
+        color: #fbf1c7;
+        cursor: pointer;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+}
+.login-rainbow-border{
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    animation: spin 2.5s infinite linear paused;
+    background: linear-gradient(to bottom,oklch(70.54% 0.098 2.19/ 0.5),oklch(75.55% 0.108 137.68/ 0.5)) padding-box,conic-gradient(from var(--bg-angle) in oklch longer hue,oklch(65.97% 0.218 30.39/ 0.5) 0 0) border-box;
+    border: 2px solid transparent;
+    &:hover {
+        animation-play-state: running;        
+    }
+    border-radius: 1rem;
+}
