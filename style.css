@@ -14,7 +14,7 @@ body {
     background-color: rgba(11, 15, 24, 0.7); 
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(233, 232, 232, 0.3);
     padding: 50px;
     max-width: 500px; 
     width: 100%;
