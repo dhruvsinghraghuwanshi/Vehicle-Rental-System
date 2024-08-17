@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ec1f40c46e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="toggle-container">
-        <button class="mode-toggle" id="modeToggle">🌙</button>
+      <button class="mode-toggle" id="modeToggle">🌙</button>
     </div>
-    <div class="login-container">
+    <div class="login-rainbow-border">
+      <div class="login-container">
         <div class="login-form">
-            <h2>Login</h2>
-    
-            <button class="google-login">Sign in with Google</button>
-            <form>
-                <div class="input-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" placeholder="mail@website.com" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">Password*</label>
-                    <input type="password" id="password" name="password" placeholder="Min. 8 characters" required>
-                </div>
-                <button type="submit" class="login-btn">Login</button>
-            </form>
-           
+          <h2>Login</h2>
+
+          <button class="google-login">
+            <i class="fa-brands fa-google"></i>&nbsp;Sign in with Google
+          </button>
+          <form>
+            <div class="input-group">
+              <label for="email">Email*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="mail@website.com"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="password">Password*</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Min. 8 characters"
+                required
+              />
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+          </form>
         </div>
-        <div class="login-image">
-           
-           
+        <div class="sign-up">
+            Not a member already <br /><button class="sign-up-button">
+                &nbsp;Sign Up!
+            </button>
+        </div>
+      </div>
     </div>
     <script>
-        const modeToggle = document.getElementById('modeToggle');
-        modeToggle.addEventListener('click', function() {
-            document.body.classList.toggle('light-mode');
-            if (document.body.classList.contains('light-mode')) {
-                modeToggle.textContent = '🌙'; 
-            } else {
-                modeToggle.textContent = '☀️'; 
-            }
-        });
-        document.querySelector("form").addEventListener("submit", function(event) {
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
+      const modeToggle = document.getElementById("modeToggle");
+      modeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("light-mode");
+        if (document.body.classList.contains("light-mode")) {
+          modeToggle.textContent = "🌙";
+        } else {
+          modeToggle.textContent = "☀️";
+        }
+      });
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
 
-            if (password.length < 8) {
-                alert("Password must be at least 8 characters long.");
-                event.preventDefault();
-            }
+          if (password.length < 8) {
+            alert("Password must be at least 8 characters long.");
+            event.preventDefault();
+          }
         });
     </script>
-</body>
+  </body>
 </html>
-
