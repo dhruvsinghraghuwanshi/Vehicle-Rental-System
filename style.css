@@ -64,7 +64,7 @@ body {
     width: 96%;
     padding: 10px;
     border: none;
-    border-radius: 40px;
+    border-radius: 12px;
     background-color: #3c3836;
     color: #fbf1c7;
     font-size: 14px;
@@ -76,7 +76,7 @@ body {
     margin-bottom: 20px;
     background-color: #3c3836;
     border: none;
-    border-radius: 20px;
+    border-radius: 12px;
     color: #fbf1c7;
     cursor: pointer;
     font-size: 14px;
@@ -103,7 +103,7 @@ body {
     padding: 10px;
     background-color: #3c3836;
     border: none;
-    border-radius: 200px;
+    border-radius: 12px;
     color: #fbf1c7;
     cursor: pointer;
     font-size: 19px;
@@ -177,7 +177,7 @@ body.light-mode .mode-toggle {
         padding-top: 14px;
         padding-bottom: 14px;
         border: none;
-        border-radius: 20px;
+        border-radius: 12px;
         color: #fbf1c7;
         cursor: pointer;
         font-size: 20px;
