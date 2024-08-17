@@ -1,3 +1,8 @@
+/* if you have it installed via NPM & a CSS loader configured */
+@import "@catppuccin/palette/style";
+
+/* alternatively via unpkg.com */
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -11,7 +16,7 @@ body {
 
 .login-container {
     display: flex;
-    background-color: rgba(11, 15, 24, 0.7); 
+    background-color: var(--ctp-mocha-base); 
     backdrop-filter: blur(10px);
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(233, 232, 232, 0.3);
@@ -47,7 +52,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 40px;
-    background-color: #2E3039;
+    background-color: var(--ctp-mocha-surface1);
     color: #fff;
     font-size: 14px;
 }
